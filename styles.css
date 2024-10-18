@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul.menu li {
+    position: relative;
+    margin-right: 20px;
+}
+
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+ul.menu li a:hover {
+    background-color: #555;
+}
+
+ul.dropdown {
+    display: none; /* Меню приховане за замовчуванням */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+ul.dropdown li {
+    margin: 0;
+}
+
+ul.dropdown li a {
+    color: black;
+    padding: 10px 20px;
+    display: block;
+}
+
+ul.dropdown li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Показуємо меню при наведенні */
+ul.menu li:hover .dropdown {
+    display: block;
+}
