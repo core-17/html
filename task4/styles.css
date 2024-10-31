@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery figure {
+    width: 200px; /* Фіксована ширина для рівномірності */
+    text-align: center;
+    margin: 0;
+}
+
+.gallery img {
+    width: 100%; /* Зображення заповнює контейнер */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}

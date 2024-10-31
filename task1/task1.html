@@ -1,104 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three Columns Layout</title>
-    <style>
-        .mycontainer1 {
-            width: 100%;
-            overflow: auto;
-        }
-        .mycontainer1 div {
-            width: 33%;
-            float: left;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        .mycontainer2 {
-            width: 100%;
-            overflow: auto;
-        }
-        .mycontainer2 div {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        .mycontainer3 {
-            width: 100%;
-            overflow: auto;
-        }
-        .mycontainer3 div {
-            width: 25%;
-            float: left;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        .mycontainer4 {
-            width: 100%;
-            overflow: auto;
-        }
-        .mycontainer4 div {
-            width: 50%;
-            float: left;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        /* Clearfix for floating elements */
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-    </style>
+    <title>Zadania1</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+</body>
+    <form class="registration-form">
+        <label for="firstName">Imię:</label>
+        <input type="text" id="firstName" name="firstName" required>
 
-<div class="mycontainer1 clearfix">
-    <div>
-        <p>Column 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
-    </div>
-    <div>
-        <p>Column 2: Donec aliquet, urna non tempor fringilla, metus erat consequat magna, vel scelerisque elit nisl quis sapien. Nulla facilisi. Vivamus ac magna in mauris viverra pharetra. Nulla fermentum purus eu orci vestibulum, at pharetra lectus viverra.</p>
-    </div>
-    <div>
-        <p>Column 3: Integer at lacus vel massa gravida fermentum. Cras eget velit vitae libero feugiat elementum nec nec metus. Sed congue magna non justo eleifend, nec ultricies libero mollis. Vivamus ut est at libero vulputate posuere. Morbi eget ultricies neque.</p>
-    </div>
-</div>
+        <label for="lastName">Nazwisko:</label>
+        <input type="text" id="lastName" name="lastName" required>
 
-<div class="mycontainer2 clearfix">
-    <div>
-        <p>Column 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
-    </div>
-</div>
+        <label for="street">Ulica:</label>
+        <input type="text" id="street" name="street" required>
 
-<div class="mycontainer3 clearfix">
-    <div>
-        <p>Column 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
-    </div>
-    <div>
-        <p>Column 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
-    </div>
-    <div>
-        <p>Column 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
-    </div>
-    <div>
-        <p>Column 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
-    </div>
-</div>
+        <label for="houseNumber">Numer domu:</label>
+        <input type="text" id="houseNumber" name="houseNumber" required>
 
-<div class="mycontainer4 clearfix">
-    <div>
-        <p>Column 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
-    </div>
-    <div>
-        <p>Column 2: Donec aliquet, urna non tempor fringilla, metus erat consequat magna, vel scelerisque elit nisl quis sapien. Nulla facilisi. Vivamus ac magna in mauris viverra pharetra. Nulla fermentum purus eu orci vestibulum, at pharetra lectus viverra.</p>
-    </div>
-</div>
+        <label for="apartmentNumber">Numer mieszkania:</label>
+        <input type="text" id="apartmentNumber" name="apartmentNumber">
 
+        <label for="city">Miasto:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label>Płeć:</label>
+        <label><input type="radio" name="gender" value="male" required> Mężczyzna</label>
+        <label><input type="radio" name="gender" value="female" required> Kobieta</label>
+
+        <label for="drivingLicense">Czy posiadasz prawo jazdy?</label>
+        <input type="checkbox" id="drivingLicense" name="drivingLicense">
+
+        <label for="region">Województwo:</label>
+        <select id="region" name="region" required>
+            <option value="dolnoslaskie">Dolnośląskie</option>
+            <option value="kujawsko-pomorskie">Kujawsko-pomorskie</option>
+            <option value="lubelskie">Lubelskie</option>
+            <option value="lubuskie">Lubuskie</option>
+            <option value="lodzkie">Łódzkie</option>
+            <option value="malopolskie">Małopolskie</option>
+            <option value="mazowieckie">Mazowieckie</option>
+            <option value="opolskie">Opolskie</option>
+            <option value="podkarpackie">Podkarpackie</option>
+            <option value="podlaskie">Podlaskie</option>
+            <option value="pomorskie">Pomorskie</option>
+            <option value="slaskie">Śląskie</option>
+            <option value="swietokrzyskie">Świętokrzyskie</option>
+            <option value="warminsko-mazurskie">Warmińsko-mazurskie</option>
+            <option value="wielkopolskie">Wielkopolskie</option>
+            <option value="zachodniopomorskie">Zachodniopomorskie</option>
+        </select>
+
+        <label for="comments">Uwagi:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <label for="birthDate">Data urodzenia:</label>
+        <input type="date" id="birthDate" name="birthDate" required>
+
+        <label for="phoneNumber">Numer telefonu:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+        <button type="submit">Wyślij</button>
+    </form>
 </body>
 </html>
