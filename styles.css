@@ -34,7 +34,7 @@ ul.menu li a:hover {
 }
 
 ul.dropdown {
-    display: none; /* Меню приховане за замовчуванням */
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -60,7 +60,7 @@ ul.dropdown li a:hover {
     background-color: #f0f0f0;
 }
 
-/* Показуємо меню при наведенні */
+
 ul.menu li:hover .dropdown {
     display: block;
 }
